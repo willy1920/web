@@ -17,3 +17,5 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   slideIndex++;
 }
+
+document.getElementById('leftMenu').
