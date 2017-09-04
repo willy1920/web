@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-   setInterval(showSlides, 5000, slideIndex)
+  //showSlides();
+  //setInterval(showSlides, 5000)
 }, false);
 
 var slideIndex = 1;
@@ -11,7 +12,7 @@ function showSlides() {
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
   slideIndex++;

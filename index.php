@@ -9,18 +9,18 @@
 <body>
 	<img src="icon/menuIcon.png" alt="Menu alt" id="menuIcon">
 	<section id="leftMenu">
-		<div class="content">Home</div>
-		<div class="content">About Us</div>
-		<div class="content">Curriculum</div>
-		<div class="content">Contact Us</div>
+		<div class="content hvr-bounce-to-right">Home</div><br>
+		<div class="content hvr-bounce-to-right">About Us</div><br>
+		<div class="content hvr-bounce-to-right">Curriculum</div><br>
+		<div class="content hvr-bounce-to-right">Contact Us</div>
 	</section>
 
 	<header class="slideshow-container">
 		<section class="Slides fade">
-	    <img src="icon/menuIcon.png" style="width:100%">
+	    <img src="img/img1.jpg" style="width:100%">
 	  </section>
 		<section class="Slides fade">
-	    <img src="icon/menuIcon.png" style="width:100%">
+	    <img src="img/img2.png" style="width:100%">
 	  </section>
 	</header>
 	<script type="text/javascript" src="js/js.js"></script>
