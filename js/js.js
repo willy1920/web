@@ -25,11 +25,13 @@ function showMenu(){
   document.getElementById('closeIcon').style.display = 'block';
   document.getElementById('closeIcon').className = 'rotateIn';
   document.getElementById('leftMenu').style.display = 'block';
+  document.getElementById('leftMenu').className = 'moveDown';
 
   setTimeout(finishAnimationMenu, 1000);
 }
 function finishAnimationMenu(){
   document.getElementById('menuIcon').className = '';
+  document.getElementById('leftMenu').className = '';
   document.getElementById('menuIcon').style.display = 'none';
 }
 
@@ -37,10 +39,12 @@ function closeMenu(){
   document.getElementById('closeIcon').className = 'rotateOut';
   document.getElementById('menuIcon').style.display = 'block';
   document.getElementById('menuIcon').className = 'rotateIn';
-  document.getElementById('leftMenu').style.display = 'none';
+  document.getElementById('leftMenu').className = 'moveUp';
   setTimeout(finishAnimationMenuClose, 1000);
 }
 function finishAnimationMenuClose(){
   document.getElementById('menuIcon').className = '';
+  document.getElementById('leftMenu').className = '';
   document.getElementById('closeIcon').style.display = 'none';
+  document.getElementById('leftMenu').style.display = 'none';
 }

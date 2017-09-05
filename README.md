@@ -1,3 +1,4 @@
-# web
-Icon menu fixed
-Content menu effect fixed
+# Web
+######Left menu effect done
+######Icon menu fixed
+######Content menu effect fixed
