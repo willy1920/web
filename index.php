@@ -17,11 +17,14 @@
 	</section>
 
 	<header class="slideshow-container">
-		<section class="Slides fade">
+		<section class="Slides fadeOut" style="display: none;">
 	    <img src="img/img1.jpg" style="width:100%">
 	  </section>
-		<section class="Slides fade">
-	    <img src="img/img2.png" style="width:100%">
+		<section class="Slides fadeOut" style="display: none;">
+	    <img src="img/img2.jpg" style="width:100%">
+	  </section>
+		<section class="Slides fadeOut" style="display: none;">
+	    <img src="img/img3.jpg" style="width:100%">
 	  </section>
 	</header>
 	<script type="text/javascript" src="js/js.js"></script>

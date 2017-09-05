@@ -1,14 +1,15 @@
-/*document.addEventListener('DOMContentLoaded', function() {
-  //showSlides();
-  //setInterval(showSlides, 5000)
+document.addEventListener('DOMContentLoaded', function() {
+  showSlides();
+  setInterval(showSlides, 5000)
 }, false);
 
-var slideIndex = 1;
+var slideIndex = 0;
 
 function showSlides() {
   var n = slideIndex;
   var i;
   var slides = document.getElementsByClassName("Slides");
+  console.log(slides.length);
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -17,7 +18,7 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   slideIndex++;
 }
-*/
+
 document.getElementById('menuIcon').addEventListener('click', showMenu, false);
 document.getElementById('closeIcon').addEventListener('click', closeMenu, false);
 function showMenu(){
@@ -27,7 +28,7 @@ function showMenu(){
   document.getElementById('leftMenu').style.display = 'block';
   document.getElementById('leftMenu').className = 'moveDown';
 
-  setTimeout(finishAnimationMenu, 1000);
+  setTimeout(finishAnimationMenu, 990);
 }
 function finishAnimationMenu(){
   document.getElementById('menuIcon').className = '';
@@ -40,11 +41,11 @@ function closeMenu(){
   document.getElementById('menuIcon').style.display = 'block';
   document.getElementById('menuIcon').className = 'rotateIn';
   document.getElementById('leftMenu').className = 'moveUp';
-  setTimeout(finishAnimationMenuClose, 1000);
+  setTimeout(finishAnimationMenuClose, 990);
 }
 function finishAnimationMenuClose(){
-  document.getElementById('menuIcon').className = '';
-  document.getElementById('leftMenu').className = '';
   document.getElementById('closeIcon').style.display = 'none';
   document.getElementById('leftMenu').style.display = 'none';
+  document.getElementById('menuIcon').className = '';
+  document.getElementById('leftMenu').className = '';
 }
