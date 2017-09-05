@@ -41,7 +41,14 @@ html, body{width: 100%;height: 100%; padding: 0; margin: 0; box-sizing: border-b
 }
 
 #leftMenu{font-size: 30px;}
-
+#respon{padding: 0;margin: 0;z-index: 1; width: 100%; height: 100%; clear: both;}
+#logo{
+  z-index: 9;
+  position: fixed;
+  margin: 0 0 0 60%;
+  padding: 0;
+  float: right;
+}
 .content{padding: 10px; width: 100%;}
 .content:hover{cursor: pointer;}
 
@@ -53,6 +60,21 @@ html, body{width: 100%;height: 100%; padding: 0; margin: 0; box-sizing: border-b
   -webkit-animation-duration: 1s;
   animation-name: fadeOut;
   animation-duration: 1s;
+}
+
+.contentDropdown{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.dropbtn{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes fadeOut {
