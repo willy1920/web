@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<img src="icon/menuIcon.png" alt="Menu alt" id="menuIcon">
+	<img src="icon/close.png" alt="Close alt" id="closeIcon" class="">
+	<img src="icon/menuIcon.png" alt="Menu alt" id="menuIcon" class="">
 	<section id="leftMenu">
 		<div class="content hvr-bounce-to-right">Home</div><br>
 		<div class="content hvr-bounce-to-right">About Us</div><br>
