@@ -40,7 +40,7 @@ html, body{width: 100%;height: 100%; padding: 0; margin: 0; box-sizing: border-b
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4eef8', endColorstr='#67c7e4', GradientType=1 );
 }
 
-#leftMenu{font-size: 30px;}
+#leftMenu{font-size: 20px;}
 #respon{padding: 0;margin: 0;z-index: 1; width: 100%; height: 100%; clear: both;}
 #logo{
   z-index: 9;

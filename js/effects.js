@@ -1,15 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-  showSlides();
-  setInterval(showSlides, 5000)
-}, false);
-
 var slideIndex = 0;
 
 function showSlides() {
   var n = slideIndex;
   var i;
   var slides = document.getElementsByClassName("Slides");
-  console.log(slides.length);
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
