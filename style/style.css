@@ -1,4 +1,29 @@
-html, body{width: 100%;height: 100%; padding: 0; margin: 0; box-sizing: border-box; z-index: 0}
+html, body{width: 100%;height: 100%; padding: 0; margin: 0; box-sizing: border-box;
+  z-index: 0}
+#loader{
+  border-top: 16px solid #ff0000;
+  border-right: 16px solid #809fff;
+  border-bottom: 16px solid #147f3a;
+  border-left: 16px solid #147f3a;
+  position: fixed;
+  margin-left: calc(50% - 75px);
+  margin-top: calc(25% - 150px);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes spin {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
 #leftMenu{
   display: none;
   background-color: red;
@@ -11,6 +36,7 @@ html, body{width: 100%;height: 100%; padding: 0; margin: 0; box-sizing: border-b
   height: 100%;
 }
 #menuIcon{
+  display: none;
   width: 50px;
   height: 50px;
   margin: 10px 0 0 10px;
@@ -41,18 +67,44 @@ html, body{width: 100%;height: 100%; padding: 0; margin: 0; box-sizing: border-b
 }
 
 #leftMenu{font-size: 20px;}
-#respon{padding: 0;margin: 0;z-index: 1; width: 100%; height: 100%; clear: both;}
+#respon{
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  clear: both;
+  position: fixed;}
 #logo{
+  display: none;
   z-index: 9;
-  position: fixed;
-  margin: 0 0 0 60%;
+  position: relative;
+  margin: 0 1% 0 0;
   padding: 0;
   float: right;
+  z-index: 4;
+}
+.logo{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1
 }
 .content{padding: 10px; width: 100%;}
 .content:hover{cursor: pointer;}
 
-.slideshow-container{width: 100%; height: 100%;position: fixed; margin: 0; padding: 0; box-sizing: border-box;z-index: 1}
+.slideshow-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+   margin: 0;
+   padding: 0;
+   box-sizing:
+   border-box;
+   z-index: 1}
 .Slides{display: none;height: 100%; width: 100%; margin: 0; padding: 0; box-sizing: border-box;}
 .Slides img{height: auto;width: 100%; margin: 0; padding: 0; box-sizing: border-box;}
 .fadeOut{
@@ -202,46 +254,4 @@ html, body{width: 100%;height: 100%; padding: 0; margin: 0; box-sizing: border-b
   to{
     transform: translate(0, -100%);
   }
-}
-
-.hvr-bounce-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-.hvr-bounce-to-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2098D1;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
-  color: white;
-}
-.hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }

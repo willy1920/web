@@ -7,10 +7,10 @@ function ajax(ajaxRequest){
   return ajaxRequest;
 }
 
-window.onload = function(){
+/*window.onload = function(){
   showLeftMenu();
-  showHome();
-}
+  showAboutUs();
+}*/
 
 var start;
 
